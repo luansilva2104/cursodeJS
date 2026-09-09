@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   var nome = window.prompt("Digite seu nome:");
+   document.writeln("Olá, " + nome.toUpperCase()+ "! Está é sua área de depósito.");
+
+
+   document.writeln("O seu nome tem " + nome.length + " caracteres.");
+
+
+   document.writeln("<br>O seu nome em minúsculo é: " + nome.toLowerCase() + "</br>");
+
+//to.uppercase() vai deixar o textodigitado em maiúsculo
+//.length vai contar quantos caracteres tem no texto digitado
+//to.lowercase() vai deixar o texto digitado em minúsculo
+
+var money = parseFloat(window.prompt("Digite um valor depositado:"));
+
+
+if (money >= 10000) {
+    document.writeln("<br>" + nome + ", você é um cliente VIP!</br>");
+}
+else {
+        document.writeln("<br>" + nome + ", você é um cliente comum!</br>");
+}
+
+money = money.toLocaleString("pt-BR", {style: "currency", currency: "BRL"}); //Colocando o valor em reias
+document.writeln("<br>O valor digitado foi: " + money + "</br>");
+
+   </script>
+</body>
+</html> 
