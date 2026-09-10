@@ -16,7 +16,22 @@
     <h1>Iniciando estudos DOM</h1>
     <p>Aqui vai o resultado</p>
     <p> Aprendendo a usar <strong> DOM</strong> em Java Script</p>
-    <div>Clique em mim</div>
-    <script></script>
+    <div id="teste">Clique em mim</div>
+    <script>
+        //DOM - Document Object Model - Modelo de Objeto de Documento
+
+        var corpo = window.document.body; //pega o corpo do documento
+        corpo.style.backgroundColor = "lightgray"; //muda a cor do fundo do corpo do documento
+
+        var p1 = window.document.getElementsByTagName('p')[0]; //pega o primeiro elemento p do documento pelo número do índice
+        document.write("Está escrito assim: " + p1.innerHTML); //escreve na tela o texto do elemento p
+        p1.style.color = 'red'; //muda a cor do texto do elemento p
+
+        var d = window.document.getElementById('teste'); //pega o elemento com id "teste"
+        d.innerHTML = "Cliquei no elemento"; //muda o texto do elemento
+
+
+
+    </script>
 </body>
 </html>
