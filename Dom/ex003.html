@@ -24,6 +24,7 @@
     <input type="number" name="txtn2" id="txtn2">
     <input type="button" value="somar" onclick="somar()">
     <div id="res"> <strong>RESULTADO</strong></div>
+    
 
     <script> 
 
@@ -32,16 +33,25 @@
   //Mais para cima é pra deixar bnt (css)
   //E para baixo é interatividade (js)
 
-      var nome = window.prompt("Digite o seu noome:");
-
+      var nome = window.prompt("Digite o seu nome:");
+       
         function somar(){
+            
             var tn1 = window.document.getElementById('txtn1')
             var tn2 = window.document.getElementById('txtn2')
             var n1 = Number(tn1.value)
             var n2 = Number(tn2.value)
             var s = n1 + n2
             res.innerHTML = nome + " a soma entre " +n1+ " e " +n2+ " é igual a " +s
-        }
+
+        if( s < 100){
+        res.innerHTML = ("<strong>O valor " +s+ " é menor que 100 " +nome+ "</strong>")
+       } else {
+        res.innerHTML = ("<strong> O valor " +s+ " é maior que 100 S.r " +nome+ "</strong>" )
+       }
+    
+}
+
     </script>
 </body>
 </html>
