@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      div#area{
+        font: normal 20px Arial;
+        background-color: rgb(43, 78, 175);
+        color: #fff;
+        width: 300px;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+      }
+
+
+    </style>
+</head>
+<body>
+    <div id="area" >
+        interajaaa
+     </div> 
+
+     <script>
+
+        var area = window.document.getElementById('area')
+
+
+        area.addEventListener("click", clicar) //onclick="clicar()"  
+        area.addEventListener("mouseenter", entrar) //onmouseenter="entrar()"
+        area.addEventListener("mouseout", sair)//onmouseout="sair()
+
+        // Esses comandos em comentario poderiam ir dentro da div
+
+         function clicar() {
+           area.innerText = "MORANGUINHO!!!"
+           area.style.background = "red"
+        }
+        function entrar(){
+            area.innerHTML = "<strong>GRÊMIO!!!</strong>"
+            area.style.background = "black"
+        }
+        function sair(){
+            area.innerHTML = "<strong>DALE</strong>"
+            area.style.background = "blue"
+        }
+
+     </script>
+    
+</body>
+</html>
