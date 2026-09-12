@@ -11,6 +11,10 @@ header {
 h1 {
    text-align:center;
    }
+   div {
+    text-align: center;
+    padding: 5px;
+   }
 
 section{
     background: white;
