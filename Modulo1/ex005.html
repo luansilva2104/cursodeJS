@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+document.writeln("<br>*******************  TESTANDO OPERAÇÕES MATEMÁTICAS</br>");
+
+var numero1 = parseFloat(window.prompt("Digite o primeiro número:"));
+var numero2 = parseFloat(window.prompt("Digite o segundo número:"));
+
+var conta1 = numero1 + numero2;
+var conta2 = numero1 - numero2;
+var conta3 = numero1 * numero2;
+var conta4 = numero1 / numero2;
+var conta5 = numero1 % numero2;
+var conta6 = numero1 ** numero2;
+
+document.writeln("<br>A soma dos números é: " + conta1 + "<br>");
+document.writeln("A subtração dos números é: " + conta2 + "<br>");
+document.writeln("A multiplicação dos números é: " + conta3 + "<br>");
+document.writeln("A divisão dos números é: " + conta4 + "<br>");
+document.writeln("O resto da divisão dos números é: " + conta5 + "<br>");
+document.writeln("O primeiro número elevado ao segundo número é: " + conta6 + "<br>");
+
+document.writeln("<br>*******************  TESTANDO ORDEM DE PROCEDENCIA</br>");
+
+var a = 5 + 3
+var b = a % 5
+var c= 5 * (b ** 2)
+var d = 10 - (a / 2)
+var e = (6 * 2 ) / d
+var f = (b % e) + 4 / e
+
+document.writeln("<br>O resultado da expressão é: " + a + "<br>");
+document.writeln("O resultado da expressão é: " + b + "<br>");
+document.writeln("O resultado da expressão é: " + c + "<br>"); 
+document.writeln("O resultado da expressão é: " + d + "<br>");
+document.writeln("O resultado da expressão é: " + e + "<br>");
+document.writeln("O resultado da expressão é: " + f + "<br>");
+
+document.writeln("<br>*******************  TESTANDO AUTO-ATRIBUIÇÃO</br>");
+
+var g = 5
+ g = g - 3
+ g += 2  // Mesma coisa que n = n + 2, só que mais rápido  
+ g *= 3
+ g /= 2
+ g **= 2 // resultado da potenciação 36
+
+document.writeln("O resultado da expressão é: " + g + "<br>");
+
+document.writeln("<br>*******************  TESTANDO INCREMENTO, DECREMENTO E FOR</br>");
+
+for (var h = 0; h < 5; h++) {
+    document.writeln("<br>É a " + h + " vez que penso em vc me contratando silvio</br>");} 
+
+
+    </script>
+    
+</body>
+</html>
