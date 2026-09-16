@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(45, 97, 52);
+}
+header{
+    color: white;
+    text-align: center;
+}
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin:auto;
+    box-shadow: 3px 3px 10px black;
+}
+select#seltab {
+    width: 100px;
+}
+footer{
+    color:white;
+    text-align: center;
+    font-style: italic;
+}
+input[id="gg"]{
+    width: 200px;
+    margin: 10px auto;
+    font-size: 10px;
+     border-radius: 10px;
+}
