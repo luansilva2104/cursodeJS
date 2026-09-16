@@ -19,3 +19,10 @@ do {
 	pizzza--
 	console.log(`Você comeu um pedaço de pizza, resta ${pizzza} pedaços.`)
 } while (pizzza > 0)
+
+    
+console.log("\n----------FOR----------\n")
+
+for (var pizzaa = 12; pizzaa>=1; pizzaa--) {
+    console.log("Você comeu 1 pedaço de pizza, restam " +pizzaa+ " pedaços!")
+}

@@ -1,0 +1,35 @@
+body {
+    background-image: url("cinza.avif");
+    background-position: center;
+}
+header{
+    color: white;
+    text-align: center;
+    
+}
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin:auto;
+    box-shadow: 3px 3px 10px black;
+}
+footer{
+    color:white;
+    text-align: center;
+    font-style: italic;
+}
+input[type="Button"] {
+        
+        width: 100px;
+        margin: 15px auto;
+        font-size: 20px;
+        border-radius: 20px;
+    }
+div[id="dd"] {
+    position: relative;
+    width: 100%;
+    font-size: 20px;
+}
+
